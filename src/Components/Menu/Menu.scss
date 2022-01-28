@@ -1,0 +1,41 @@
+.menu{
+
+    width: 350px;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: center;
+    position: fixed;
+    top: 0;
+right: -300px;
+    top: 0;
+    background-color: black;
+    z-index: 2;
+ 
+    
+    
+    li{
+        font-size: 25px;
+        font-weight: 100px;
+        list-style: none;
+        text-decoration: none;
+         
+        a{
+            text-decoration: none;
+            margin: 5px;
+            padding: 0;
+        }
+
+          &:hover{
+              font-weight: 700px;
+          }
+       
+        
+
+       
+            
+      
+    }
+
+}

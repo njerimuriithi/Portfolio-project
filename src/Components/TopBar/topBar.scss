@@ -1,0 +1,79 @@
+
+
+.topbar{
+    width:100%;
+    height: 70px;
+    background-color:black;
+    position: fixed;
+    top: 0;
+     z-index: 2;
+    color: white;
+    transition: all 1s ease;
+
+    
+  
+
+.wrapper {
+    padding: 10px 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+       
+}
+.logo{
+    font-size: 45px;
+    font-weight: bold;
+    font-family: 'Sedgwick Ave', cursive;
+    color: #4E9F3D;
+}
+.leftcontents{
+    display:flex;
+    align-items: center;
+    
+}
+.itemContainer{
+    font-size: 18px;
+    font-weight: 700px;
+}
+/* horizontal elements is display flex then flex-direction -column*/
+.hamburger{
+    display:flex;
+    flex-direction: column;
+    justify-content:space-between;
+    width: 34px;
+    height: 30px;
+    cursor: pointer;
+}
+.hamburger > span{
+    background-color: #4E9F3D;
+    width: 100%;
+    height: 4px;
+    transition: all 2s ease;
+    transform-origin: left;
+}
+
+&.active{
+    background-color: #435055;
+    color: yellow;
+
+    .hamburger{
+        span{
+            &:first-child{
+                background-color: white;
+                transform: rotate(45deg);
+            }
+            &:nth-child(2){
+                opacity: 0;
+            }
+           
+            &:last-child{
+                background-color: white;
+                transform: rotate(-45deg);
+            }
+
+        }
+    }
+}
+
+
+}
