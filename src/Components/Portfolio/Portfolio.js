@@ -17,14 +17,7 @@ function Portfolio() {
       id:"web",
       title:"WebApps"
     },
-    {
-      id:"mobile",
-      title:"Design"
-    },
-    {
-      id:"brand",
-      title:"Branding"
-    },
+
   ]
 
   useEffect(() => {
@@ -42,7 +35,7 @@ function Portfolio() {
   }, [selected]);
   
   return <div className="portfolioContainer">
-      <h1>Portfolio</h1>
+      <h1>Projects</h1>
      <ul>
          {List.map((items) => (
            <PortfolioList 

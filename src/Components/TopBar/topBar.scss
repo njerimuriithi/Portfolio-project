@@ -3,77 +3,59 @@
 .topbar{
     width:100%;
     height: 70px;
-    background-color:black;
+    background-color:#171717;
     position: fixed;
     top: 0;
      z-index: 2;
     color: white;
     transition: all 1s ease;
-
+    cursor: pointer;
     
   
 
 .wrapper {
-    padding: 10px 30px;
+    padding: 10px 40px;
     display: flex;
     align-items: center;
     justify-content: space-between;
        
 }
 .logo{
-    font-size: 45px;
+    font-size: 20px;
     font-weight: bold;
     font-family: 'Sedgwick Ave', cursive;
-    color: #4E9F3D;
+    color: white;
+
+    &:hover{
+        color:#FFC900;
+        transition: 0.5s ease-in-out;
+    }
 }
 .leftcontents{
     display:flex;
     align-items: center;
     
-}
-.itemContainer{
-    font-size: 18px;
-    font-weight: 700px;
-}
-/* horizontal elements is display flex then flex-direction -column*/
-.hamburger{
-    display:flex;
-    flex-direction: column;
-    justify-content:space-between;
-    width: 34px;
-    height: 30px;
-    cursor: pointer;
-}
-.hamburger > span{
-    background-color: #4E9F3D;
-    width: 100%;
-    height: 4px;
-    transition: all 2s ease;
-    transform-origin: left;
-}
-
-&.active{
-    background-color: #435055;
-    color: yellow;
-
-    .hamburger{
-        span{
-            &:first-child{
-                background-color: white;
-                transform: rotate(45deg);
-            }
-            &:nth-child(2){
-                opacity: 0;
-            }
-           
-            &:last-child{
-                background-color: white;
-                transform: rotate(-45deg);
-            }
-
-        }
+    &:hover{
+        color:#FFC900;
+        transition: 0.9s ease-in-out;
+    }
+    
+    .leftItemContainer{
+        font-size: 15px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0 70px;
     }
 }
+.itemContainer{
+    font-size: 15px;
+    font-weight: 700px;
+     
+
+    
+}
+/* horizontal elements is display flex then flex-direction -column*/
 
 
 }

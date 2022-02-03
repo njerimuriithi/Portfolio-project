@@ -1,0 +1,33 @@
+.Nav{
+    
+   background-color: white;
+    ul{
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+
+
+        li{
+
+            margin: 0px 60px;
+        text-decoration: none;
+        }
+
+    a{
+            text-decoration: none;
+            font-size: 18px;
+            color: black;
+            font-weight: bold;
+
+            &:hover{
+                background-color:#FFC900;
+                border-radius: 10px;
+                
+            }
+
+
+        }
+
+    }
+
+}

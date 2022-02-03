@@ -22,20 +22,21 @@ const textRef = useRef();
 
   return (
    <div className='intro' id='intro'>
-     
-    <div className="leftContainer">
-      <div className="imageContainer">
-      <img src={process.env.PUBLIC_URL +'/Assets/cuteLady.png'} alt="lady photo"/>
-      </div>
-      
-    </div>
-    <div className="rightContainer">
+     <div className="leftContainer">
       <div className="wrapper">
         <h2>Hi there I am</h2>
         <h1>Njeri Muriithi</h1>
-        <h3>Freelan <span ref={textRef}></span></h3>
+        <h3>Freelance <span ref={textRef}></span></h3>
       </div>
     </div>
+     
+    <div className="rightContainer">
+      <div className="imageContainer">
+      <img src={process.env.PUBLIC_URL +'/Assets/woman.png'} alt="lady photo"/>
+      </div>
+      
+    </div>
+    
   </div>
   )
 }

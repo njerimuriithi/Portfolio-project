@@ -1,6 +1,7 @@
 import React from 'react'
 import   "./topBar.scss"
-//import {PersonIcon,EmailIcon} from '@mui/icons-material';
+import EmailIcon from '@mui/icons-material/Email';
+import PhoneIcon from '@mui/icons-material/Phone';
 
 
 function TopBar({menuOpen,setMenuOpen}) {
@@ -12,26 +13,18 @@ function TopBar({menuOpen,setMenuOpen}) {
       <div className="wrapper">
         <div className="leftcontents">
         <div className="logo">NjeriMuriithi</div>
-        <div className="itemContainer">
-         
+        <div className="leftItemContainer ">
+            <PhoneIcon/>
           <span>+254 717 331 872</span>
         </div>
-      
+            <EmailIcon/>
         <div className="itemContainer">
               
           <span>nmuriithi58@gmail.com</span>
         </div>
         </div>
-        {/*Hamburger menu */}
-        <div className="rightcontent">
-          <div className="hamburger" onClick={menuOpenHandler}>
-          <span className="line1"></span>
-          <span className="line2"></span>
-          <span className="line3"></span>
-          
-       
-          </div>
-           </div>
+        
+        
        
       </div>
     </div>
